@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function getAllData() {
-    fetch(`https://nodejs-8ldronyc8-ragul0427.vercel.app/alldata`).then(res => { return res.json() }).then((res) => {
+    fetch(`https://nodejs-xi-lemon.vercel.app/alldata`).then(res => { return res.json() }).then((res) => {
         let temp = document.getElementById('listData');
         let lastRecordTitle = document.getElementById('lastRecordTitle');
 
