@@ -82,6 +82,7 @@ strContainer.forEach((secondpage) => {
 })
 
 document.addEventListener("DOMContentLoaded", function () {
+    getTotalRecords()
     getAllData();
 });
 
@@ -106,6 +107,15 @@ function getAllData() {
         }
     })
 
+}
+
+function getTotalRecords()
+{
+    fetch(`https://nodejs-xi-lemon.vercel.app/alldata`).then(res => { return res.json() }).then((res,err) => {
+        let totalRecords=document.getElementById('records')
+    
+       totalRecords.innerText="Total records:"+res.data.length
+})
 }
 
 // function insertData() {
