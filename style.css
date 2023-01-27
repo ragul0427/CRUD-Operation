@@ -308,7 +308,7 @@ iframe{
 
 .listOfData:nth-child(odd) {
     margin: 10px;
-    border: 1px solid gray;
+    border: 1px solid red;
     border-radius: 10px;
     background: gray;
     color: white;
@@ -316,7 +316,7 @@ iframe{
 
 .listOfData:nth-child(even) {
     margin: 10px;
-    border: 1px solid gray;
+    border: 1px solid orangered;
     border-radius: 10px;
     background: #adadad;
     color: white;
