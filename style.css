@@ -316,9 +316,9 @@ iframe{
 
 .listOfData:nth-child(even) {
     margin: 10px;
-    border: 1px solid FF4500;
+    border: 1px solid blue;
     border-radius: 10px;
-    background: FF4500;
+    background: blue;
     color: white;
 }
 
