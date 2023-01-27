@@ -310,13 +310,13 @@ iframe{
     margin: 10px;
     border: 1px solid red;
     border-radius: 10px;
-    background: gray;
+    background: red;
     color: white;
 }
 
 .listOfData:nth-child(even) {
     margin: 10px;
-    border: 1px solid orangered;
+    border: 1px solid red;
     border-radius: 10px;
     background: #adadad;
     color: white;
