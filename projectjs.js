@@ -86,6 +86,8 @@ document.addEventListener("DOMContentLoaded", function () {
     getAllData();
 });
 
+
+
 function getAllData() {
     fetch(`https://nodejs-xi-lemon.vercel.app/alldata`).then(res => { return res.json() }).then((res) => {
         let temp = document.getElementById('listData');
@@ -127,6 +129,7 @@ function getTotalRecords()
         totalRecords.innerText="Total records:"+res.data.length
 })
 }
+
 
 // function insertData() {
 //     let t1 = document.getElementById('t1').value;
