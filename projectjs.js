@@ -113,7 +113,7 @@ function getTotalRecords()
 {
     fetch(`https://nodejs-xi-lemon.vercel.app/alldata`).then(res => { return res.json() }).then((res,err) => {
         let totalRecords=document.getElementById('records')
-        
+        let button=document.querySelectorAll('#btn')
         
         button.forEach((btn)=>{
            btn.addEventListener('click',()=>{
@@ -122,7 +122,9 @@ function getTotalRecords()
                 location.reload()
             },3000)
            })
-             totalRecords.innerText="Total records:"+res.data.length
+        })
+        
+        totalRecords.innerText="Total records:"+res.data.length
 })
 }
 
