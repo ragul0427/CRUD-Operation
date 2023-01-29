@@ -113,22 +113,28 @@ function getAllData() {
 
 function getTotalRecords()
 {
-    fetch(`https://nodejs-xi-lemon.vercel.app/alldata`).then(res => { return res.json() }).then((res,err) => {
+    fetch(`https://nodejs-xi-lemon.vercel.app/alldata`).then(res => { return res.json() }).then((res)=> {
         let totalRecords=document.getElementById('records')
         let button=document.querySelectorAll('#btn')
         
+       
         button.forEach((btn)=>{
            btn.addEventListener('click',()=>{
 
             setTimeout(function(){
                 location.reload()
-            },3000)
+            },4000)
            })
         })
         
         totalRecords.innerText="Total records:"+res.data.length
+}).catch(error=>{
+   alert("Please connect your Data")
 })
+
 }
+
+
 
 
 // function insertData() {
