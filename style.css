@@ -338,11 +338,51 @@ iframe{
   #records{
     margin-top: -60px;
   }
+    
+    .container{
+    overflow-x: hidden;
+    width: 100wh;
+  }
+
+  .containerSecond{
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .containerThird{
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .containerFourth{
+    overflow-x: hidden;
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 600px)
 {
   #records{
     margin-top: -60px;
+  }
+    
+    .container{
+    overflow-x: hidden;
+    width: 100wh;
+  }
+
+  .containerSecond{
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .containerThird{
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .containerFourth{
+    overflow-x: hidden;
+    width: 100%;
   }
 }
