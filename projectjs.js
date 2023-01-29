@@ -129,10 +129,9 @@ function getTotalRecords()
         
         totalRecords.innerText="Total records:"+res.data.length
 }).catch(error=>{
-   if(error)
+  
    alert("Please connect your Data")
-   else
-   return res
+  
 })
 
 }
